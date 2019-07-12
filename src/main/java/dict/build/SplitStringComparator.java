@@ -16,8 +16,8 @@ public class SplitStringComparator
     	String[] seg1 = o1.split("\t");
     	String[] seg2 = o2.split("\t");
     	if (4 > seg1.length || 4 > seg2.length) return 1;
-    	Double d1 = Double.parseDouble(seg1[1]);
-    	Double d2 = Double.parseDouble(seg2[1]);
+    	Double d1 = Double.parseDouble(seg1[2]);
+    	Double d2 = Double.parseDouble(seg2[2]);
     	return d2.compareTo(d1);
     }
 
